@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .class{
+            border-radius:40px;
+            background-color:white;
+        }
+    </style>
+</head>
+<body>
+    <center><h2><ins>Progress bar</ins></h2></center>
+   
+    <script>
+        var a=document.createElement("div")
+        document.body.appendChild(a)
+        a.style.width="100%"
+        a.style.marginTop="170px"
+
+        a.style.height="20px"
+        a.style.border="1px solid black"
+        a.setAttribute("class","class")
+        var b=document.createElement("button")
+        document.body.appendChild(b)
+        b.innerText="25"
+        b.style.marginTop="20px"
+        b.style.marginLeft="50px"
+        b.addEventListener("click",hello)
+        function hello(){
+            a.style.width="200px"
+            a.style.backgroundColor="green"
+            a.style.borderColor="white"
+        }
+        var b=document.createElement("button")
+        document.body.appendChild(b)
+        b.innerText="50"
+        b.style.marginTop="20px"
+        b.style.marginLeft="40px"
+        b.addEventListener("click",hello1)
+        function hello1(){
+            a.style.width="500px"
+            a.style.backgroundColor="green"
+            a.style.borderColor="white"
+        }
+        var b=document.createElement("button")
+        document.body.appendChild(b)
+        b.innerText="75"
+        b.style.marginTop="20px"
+        b.style.marginLeft="40px"
+        b.addEventListener("click",hello2)
+        function hello2(){
+            a.style.width="700px"
+            a.style.backgroundColor="green"
+            a.style.borderColor="white"
+        }
+        var b=document.createElement("button")
+        document.body.appendChild(b)
+        b.innerText="100"
+        b.style.marginTop="20px"
+        b.style.marginLeft="40px"
+        b.addEventListener("click",hello3)
+        function hello3(){
+            a.style.width="100%"
+            a.style.backgroundColor="green"
+            a.style.borderColor="white"
+        }
+
+      
+    </script>
+</body>
+</html>
